@@ -10,9 +10,8 @@ RUN pacman --noprogressbar --noconfirm -Sy archlinux-keyring && \
         openssl && \
     pacman-db-upgrade && \
     pacman --noconfirm -Scc && \
-    gem install asciidoctor && \
-    gem install coderay && \
-    pip install typogrify && \
+    gem install --no-user-install asciidoctor && \
+    gem install --no-user-install coderay && \
     pip install watchdog && \
     pip install ws4py && \
     pip install webassets && \
