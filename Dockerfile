@@ -12,6 +12,7 @@ RUN pacman --noprogressbar --noconfirm -Sy archlinux-keyring && \
     pacman --noconfirm -Scc && \
     gem install asciidoctor && \
     gem install coderay && \
+    pip install pygments && \
     pip install watchdog && \
     pip install ws4py && \
     pip install webassets && \
